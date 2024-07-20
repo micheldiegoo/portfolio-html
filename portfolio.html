@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos em TI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #fff;
+        }
+        header {
+            background-color: #1c3b57; /* Navy */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #274e62; /* Verde petróleo */
+            margin: 10px 0;
+        }
+        .about-me {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background-color: #1c3b57;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-me img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .about-me .description {
+            flex: 1;
+        }
+        .project-section {
+            width: 500px;
+            height: 400px;
+            background-color: #1c3b57;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .project-section:hover {
+            transform: scale(1.05);
+            background-color: #2b697d;
+        }
+        .project-section h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio de Projetos em TI</h1>
+    </header>
+    <section class="about-me">
+        <div class="description">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou [Seu Nome], um desenvolvedor de software com experiência em diversas linguagens de programação. Este é o meu portfólio, onde apresento alguns dos meus projetos.</p>
+        </div>
+        <img src="sua_foto.jpg" alt="Minha Foto">
+    </section>
+    <section class="section">
+        <div class="project-section" onclick="showProjects('Python')">
+            <h2>Python</h2>
+            <p>Projetos incríveis desenvolvidos em Python.</p>
+        </div>
+        <div class="project-section" onclick="showProjects('JavaScript')">
+            <h2>JavaScript</h2>
+            <p>Projetos incríveis desenvolvidos em JavaScript.</p>
+        </div>
+        <div class="project-section" onclick="showProjects('Java')">
+            <h2>Java</h2>
+            <p>Projetos incríveis desenvolvidos em Java.</p>
+        </div>
+        <div class="project-section" onclick="showProjects('CSharp')">
+            <h2>C#</h2>
+            <p>Projetos incríveis desenvolvidos em C#.</p>
+        </div>
+    </section>
+
+    <script>
+        function showProjects(language) {
+            alert("Mostrando projetos de " + language);
+            // Aqui você pode adicionar lógica para exibir projetos específicos
+        }
+    </script>
+</body>
+</html>
